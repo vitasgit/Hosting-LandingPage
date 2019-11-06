@@ -1,0 +1,23 @@
+.features {
+	transform: skewY(2deg);
+}
+
+.features-list {
+	justify-content: space-between;
+
+	&__item {
+		width: 30%;
+		text-align: center;
+	}
+
+	&__icon {
+		width: 64px;
+		height: 64px;
+		fill: white;
+	}
+
+	&__text {
+		color: white;
+		padding-top: 1.5em;
+	}
+}

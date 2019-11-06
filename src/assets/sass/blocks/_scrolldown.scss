@@ -1,0 +1,13 @@
+.scrolldown {
+	width: 30px;
+	margin-top: 2em;
+	animation: scrolldownMove 1.5s alternate infinite;
+}
+
+
+@keyframes scrolldownMove {
+
+	100% {
+		transform: translateY(30px);
+	}
+}

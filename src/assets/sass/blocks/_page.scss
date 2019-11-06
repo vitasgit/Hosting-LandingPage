@@ -1,0 +1,55 @@
+.page {
+	overflow: hidden;
+	
+	&_d-block{
+		display: block;
+	}
+
+	&__head, &__subhead {
+		text-align: center;
+	}
+
+	&__head {
+		font-size: 3em;
+		padding-bottom: 1em;
+	}
+
+	&__subhead {
+		font-size: 1.5em;
+	}
+
+	&__text, 
+	&-figure__quote {
+		text-align: justify;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+
+	&__address {
+		color: white;
+		text-align: center;
+		padding: 1em 0;
+	}
+}
+
+.page-figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+
+	&__img {
+		width: 108px;
+	}
+
+	&__quote {
+		font-size: 1.2em;
+		padding: .8em 0 1em 0;
+		margin: 0;
+	}
+
+	&__caption {
+		color: $main-color;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,36 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: skewY(-2deg);
+	padding-bottom: 2em;
+
+	&-logo {
+		width: 35px;
+		height: 35px;
+	}
+
+	&-text {
+		color: white;
+		padding: 1em 0;
+	}
+}
+
+.footer-links {
+	&__item {
+		margin-right: .5em;
+	}
+
+	&__item > a {
+		color: lighten(#3D444AFF, 30%);
+		font-size: .85em;
+	}
+}
+
+.background {
+	width: 160%;
+	height: 100px;
+	background-color: $bg-footer;
+	position: absolute;
+	bottom: -70%;
+}

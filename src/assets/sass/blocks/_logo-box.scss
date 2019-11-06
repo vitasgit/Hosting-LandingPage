@@ -1,0 +1,18 @@
+.logo-box {
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&__text{
+		font-size: 1.5em;
+		font-weight: 600;
+		color: $logo-color;
+	}
+
+	&__icon {
+		position: absolute;
+		top: -8px;
+		right: -30px;
+		width: 20px;
+	}
+}

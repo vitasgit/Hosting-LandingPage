@@ -1,0 +1,78 @@
+.wrapper {
+
+	&-features {
+		background-color: $main-color;
+		border-top-left-radius: 3em;
+		transform: skewY(-2deg);
+		padding: 6em 0;
+		position: relative;
+
+		&:before {
+			display: block;
+			content: "";
+			width: 6em;
+			height: 6em;
+			border-radius: 50%;
+			background: white;
+			position: absolute;
+			right: 0;
+			top: -96px;
+			z-index: 2;
+		}
+
+		&:after {
+			display: block;
+			content: "";
+			width: 3em;
+			height: 3em;
+			background: $main-color;
+			position: absolute;
+			right: 0;
+			top: -45px;
+			z-index: 1;
+		}
+	}
+
+	&-team {
+		background-color: $bg-team;
+		margin-top: -3%;
+		padding: 10em 0 4em;
+	}
+
+	&-offer {
+		padding: 6em 0;
+	}
+
+	&-footer {
+		background-color: $bg-footer;
+		padding: 4em 0 2em;
+		margin-bottom: -2.2em;
+		border-top-right-radius: 3em;
+		transform: skewY(2deg);
+		position: relative;
+
+		&:before {
+			display: block;
+			content: "";
+			width: 6em;
+			height: 6em;
+			border-radius: 50%;
+			background: white;
+			position: absolute;
+			left: 0;
+			top: -96px;
+			z-index: 2;
+		}
+
+		&:after {
+			display: block;
+			content: "";
+			width: 3em;
+			height: 3em;
+			background: $bg-footer;
+			position: absolute;
+			left: 0;
+			top: -45px;
+		}
+	}
+}

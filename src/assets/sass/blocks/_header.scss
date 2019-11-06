@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1em;
+
+	&-logo {
+		width: 64px;
+		height: 64px;
+	}
+}
+
+.navbar {
+	&__menu {
+		display: none;
+		width: 35px;
+	}
+}
+
+.nav-list {
+	text-transform: lowercase;
+
+	&__item + &__item {
+		padding-left: 4rem;
+	}
+
+	&__link {
+		color: #000;
+		text-decoration: none;
+		transition: color 0.2s linear;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.nav-list {
+		display: none;
+	}
+}
